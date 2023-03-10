@@ -1,0 +1,15 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: stock-service
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+        ephemeral: false #代表是永久实例
+        #group:  默认DEFULT_GROUP 可以进行更细的相同特性处理
